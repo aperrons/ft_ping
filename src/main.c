@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
 
     ping_run(&env);
 
-    //close(env.sockfd);
+    close(env.sockfd);
 
     return 0;
 }
