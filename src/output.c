@@ -18,8 +18,7 @@ void print_verbose_icmp_notice(const char *msg) {
 
 void print_timeout_line(const char *from_ip, uint16_t seq, bool verbose) {
     (void)from_ip;
-    (void)seq;
-    if (verbose) {
-        fprintf(stderr, "ft_ping: request timeout for icmp_seq=%u\n", seq);
-    }
+    (void)verbose;
+    printf("Request timeout for icmp_seq=%u\n", seq);
+    fflush(stdout);
 }
